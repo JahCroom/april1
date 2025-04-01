@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breaking News: Koa Peat Decommits from Arizona - ESPN</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #cf202e;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-image {
+            width: 100%;
+            height: auto;
+        }
+        .article-title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .author {
+            color: gray;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        #prank {
+            display: none;
+            font-size: 24px;
+            color: red;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function prankUser() {
+            setTimeout(() => {
+                document.getElementById("news-content").style.display = "none";
+                document.getElementById("news-image").src = "prank-image.jpg";
+                document.getElementById("prank").style.display = "block";
+            }, 5000); // Change content after 5 seconds
+        }
+    </script>
+</head>
+<body onload="prankUser()">
+    <div class="header">ESPN</div>
+    <div class="container">
+        <h1 class="article-title">Sources: Koa Peat Decommits from Arizona</h1>
+        <p class="author">By ESPN Staff Writer | March 31, 2025</p>
+        <img id="news-image" class="news-image" src="fake-news-image.jpg" alt="Breaking News">
+        <div id="news-content" class="content">
+            <p>In a shocking turn of events, top-ranked high school basketball recruit Koa Peat has announced his decommitment from the University of Arizona. The 5-star prospect, who had previously pledged his commitment to the Wildcats, is now reopening his recruitment, sending shockwaves through the college basketball world.</p>
+            <p>Peat, a dominant force on both ends of the floor, had been a key addition to Arizona’s future roster. Many analysts projected him as a game-changer for the Wildcats, with his combination of athleticism, skill, and basketball IQ making him one of the most sought-after recruits in the country.</p>
+            <p>Sources close to the situation indicate that Peat’s decision was influenced by multiple factors, including the possibility of exploring other programs that may offer a better system fit. Several schools, including powerhouse programs like Duke, Kentucky, and Kansas, are expected to reach out immediately to gauge his interest.</p>
+            <p>“It’s definitely surprising,” said one recruiting analyst. “Arizona had been building around Peat as a cornerstone of their future. Now, with his decommitment, they’ll need to reassess their plans moving forward.”</p>
+            <p>While Peat himself has yet to make an official statement, speculation is already running wild about his next move. The McDonald’s All-American forward remains one of the most coveted prospects in the nation, and wherever he lands, he is expected to make an immediate impact at the college level.</p>
+        </div>
+        <p id="prank">APRIL FOOLS! Koa Peat is still locked in! 😆🏀</p>
+    </div>
+</body>
+</html>
